@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>CHANDRA SEKHAR</title>
+    <h1>THIS IS MY FIRST PORTFOLIO</h1>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: o;
+    background: url("https://wallpaperaccess.com/full/2345244.jpg")no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: century;
+   /* font-size: 3rem;*/
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 15px white;
+    font-weight: bold;
+}
+/*about section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    
+}
+#pic{
+    display: grid;
+}
+#pic img{
+    width: 250px;
+    height: 500px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#introh2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/*hobbies section*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+/*Education Section*/
+#servicecs{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(255,45,45)50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgba(255,45,45);
+
+}
+/*contact section*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href = "#home">Home</a></li>
+            <li><a href = "#about">About Me</a></li>
+            <li><a href = "#portfolio">Hobbies</a></li>
+            <li><a href = "#services">Education</a></li>
+            <li><a href = "#contact">Contact Me</a></li>
+        </ul>
+    </nav>  
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM<br>CHANDRA SEKHAR</h1>
+            <button class="btn">
+                ETHICAL HACKING ASPIRANT
+            </button>
+
+        </div>
+    </section>
+    <section id="about">
+        <div id="pic">
+            <h1 class="headings">ABOUT ME</h1>
+            <img src="https://i.ibb.co/mNnpBn3/myImg.jpg" alt="myImg"
+            <div id="intro">
+                <h2>CHANDRA SEKHAR </h2>
+                <P>
+                                                Hello guys ,<br>
+                       I am Chandra Sekhar Aripaka.My native place is Gavaravaram.I am from Chodavaram,Visakhapatnam. Currently pursuing CSE-Integrated M.Tech at VIT-AP University.
+                       The languages I know best are Python, html and css. I am beginner of the Java(OOPs) language. 
+                       My dream is to learn as much as there is in this universe.
+
+                </P>
+            </div>
+        </div>
+
+    </section>
+    <section id="portfolio">
+        <h1 class="headings">HOBBIES</h1>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNH08758j4fX6cDT2z7JAC3y57Bqb94cFveMR0MbOZpb-7NTiwuo2vgk5IoJCiimxWuAs&usqp=CAU" alt="">
+            <img src="https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80" alt="">
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What-Skills-Do-I-Need-to-Become-a-Data-Scientist.jpg" alt="">
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="headings">EDUCATION</h1>
+        <div class="row">
+             <div class="box">
+                <h3 class="headings">SCHOOL</h3>
+                <p>
+                    I went Gayathri public school Chodavarm in my nursery to fourth class. After fourth class ,I had joined at AP RESIDENTIAL SCHOOL Narsipatnam in my fifth class.
+                    I studied upto 10 th class at APRS,and passed with 97 percentage.
+    
+                </p>
+             </div>
+             <div class="box">
+                <h3 class="headings">COLLEGE</h3>
+                <p>
+                    I had completed my 2 years Intermedaite education at CHAITHANYA JR COLLEGE S.Kota and I got 98 percentage score.
+                </p>
+             </div>
+             <div class="box">
+                 <h3 class="headings">UNDER-GRADUATION</h3>
+                 <p>
+                     Now , I currently pursuing first year CSE Integrated M.Tech at VIT-AP University Amaravthi. I am very happy to join at VIT.
+                     And also, I recently joined CSI Chapter Club in VIT
+                 </p>
+             </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="headings">CONATCT ME</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+</body>
+</html>
