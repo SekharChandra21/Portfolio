@@ -7,6 +7,7 @@
     <title>CHANDRA SEKHAR</title>
     <h1>THIS IS MY FIRST PORTFOLIO</h1>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     *{
@@ -218,6 +219,53 @@ html{
     cursor: pointer;
     box-shadow: 0 0 10px white;
 }
+.social-menu ul{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+.social-menu ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color:#000;
+}
+.social-menu ul li .fa:hover{
+    color: #fff;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+
+}
 </style>
 <body>
     <nav class="navbar">
@@ -297,6 +345,15 @@ html{
             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
             <input type="submit" value="SEND" id="send">
         </form>
+        <div class="social-menu">
+            <ul>
+                <li><a href="https://www.facebook.com/chandu.aripaka.1/"><i class="fa fa-facebook"></i> </a> </li>
+                <li><a href="https://www.instagram.com/_mr.dear_comrade_/"><i class="fa fa-instagram"></i> </a> </li>
+                <li><a href="https://www.linkedin.com/in/aripaka-chandra-sekhar-b3b466234/"><i class="fa fa-linkedin"></i> </a> </li>
+
+
+            </ul>
+        </div>
     </section>
 </body>
 </html>
